@@ -1,0 +1,18 @@
+<resources>
+    <style name="Base.Theme.ExamenConsumos" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/azul_principal</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/turquesa</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/azul_oscuro</item>
+        <item name="colorPrimaryContainer">@color/estado_fondo</item>
+        <item name="colorOnPrimaryContainer">@color/azul_oscuro</item>
+        <item name="colorOutline">@color/gris_texto</item>
+        <item name="android:statusBarColor">@color/azul_principal</item>
+        <item name="android:navigationBarColor">@color/blanco</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.ExamenConsumos" parent="Base.Theme.ExamenConsumos" />
+</resources>

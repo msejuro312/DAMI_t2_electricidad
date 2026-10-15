@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/screen_padding">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/titulo_nueva_reserva" android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall" android:textColor="@color/azul_oscuro" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_gap_small" android:text="@string/subtitulo_nueva_reserva" android:textColor="@color/gris_texto" />
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_padding" app:cardBackgroundColor="@color/superficie" app:cardCornerRadius="@dimen/radius_card" app:strokeColor="@color/gris_borde" app:strokeWidth="@dimen/stroke_width">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/screen_padding">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/inputLayoutCliente" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/cliente">
+          <com.google.android.material.textfield.TextInputEditText android:id="@+id/editTextCliente" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/inputLayoutKilovatios" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:hint="@string/horas">
+          <com.google.android.material.textfield.TextInputEditText android:id="@+id/editTextKilovatios" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/cancha" android:textAppearance="@style/TextAppearance.Material3.LabelLarge" />
+        <Spinner android:id="@+id/spinnerCancha" android:layout_width="match_parent" android:layout_height="@dimen/button_height" android:entries="@array/canchas" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/horario" android:textAppearance="@style/TextAppearance.Material3.LabelLarge" />
+        <RadioGroup android:id="@+id/radioGroupHorario" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+          <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/radioDiurno" android:layout_width="wrap_content" android:layout_height="@dimen/touch_target" android:text="@string/diurno" />
+          <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/radioNocturno" android:layout_width="wrap_content" android:layout_height="@dimen/touch_target" android:layout_marginStart="@dimen/item_gap" android:text="@string/nocturno" />
+        </RadioGroup>
+      </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.button.MaterialButton android:id="@+id/buttonGuardar" android:layout_width="match_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/card_padding" android:text="@string/guardar" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/buttonVerReservas" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/item_gap_small" android:text="@string/ver_reservas" />
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>

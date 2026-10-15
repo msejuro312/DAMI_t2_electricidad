@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cálculo de consumo eléctrico</string>
+    <string name="titulo">Cálculo de consumo eléctrico</string>
+    <string name="titulo_nueva_reserva">Nuevo consumo</string>
+    <string name="subtitulo_nueva_reserva">Complete los datos para calcular el consumo.</string>
+    <string name="cliente">Cliente</string>
+    <string name="horas">Consumo en kWh</string>
+    <string name="cancha">Tipo de suministro</string>
+    <string name="horario">Conexión</string>
+    <string name="diurno">Monofásica</string>
+    <string name="nocturno">Trifásica</string>
+    <string name="guardar">Guardar consumo</string>
+    <string name="ver_reservas">Ver consumos</string>
+    <string name="reservas">Consumos registrados</string>
+    <string name="vacio">No hay consumos registrados.</string>
+    <string name="total">Importe total: S/ %1$.2f</string>
+    <string name="detalle">Cliente: %1$s\nTipo de suministro: %2$s\nConexión: %3$s\nConsumo en kWh: %4$d</string>
+    <string-array name="canchas">
+        <item>Seleccione tipo de suministro</item>
+        <item>Residencial</item>
+        <item>Comercial</item>
+        <item>Industrial</item>
+    </string-array>
+</resources>
